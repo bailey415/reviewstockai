@@ -1,30 +1,31 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'ReviewStockAI - Grow Your Google Reviews with SMS & Email',
+  author: 'ReviewStockAI',
+  headerTitle: 'ReviewStockAI',
+  description:
+    'Automate your Google review collection with AI-powered SMS and email campaigns. Get more reviews, improve your online reputation, and boost your business visibility.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
+  siteUrl: 'https://reviewstockai.com',
+  siteRepo: 'https://github.com/yourusername/reviewstockai',
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/reviewstockai-logo.svg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
+  email: 'hello@reviewstockai.com',
   github: 'https://github.com',
-  x: 'https://twitter.com/x',
+  x: 'https://twitter.com/reviewstockai',
   // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  facebook: 'https://facebook.com/reviewstockai',
+  youtube: 'https://youtube.com/reviewstockai',
+  linkedin: 'https://www.linkedin.com/company/reviewstockai',
   threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
+  instagram: 'https://www.instagram.com/reviewstockai',
   medium: 'https://medium.com',
   bluesky: 'https://bsky.app/',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
-  stickyNav: false,
+  stickyNav: true,
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
