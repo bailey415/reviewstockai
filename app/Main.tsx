@@ -1,7 +1,7 @@
 import Link from '@/components/Link'
 import siteMetadata from '@/data/siteMetadata'
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <div>
       {/* Hero Section */}
