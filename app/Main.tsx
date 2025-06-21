@@ -1,3 +1,5 @@
+'use client'
+
 import Link from '@/components/Link'
 import siteMetadata from '@/data/siteMetadata'
 
