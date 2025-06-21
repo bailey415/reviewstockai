@@ -332,7 +332,7 @@ export default function Home() {
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span className="text-gray-600">hello@reviewstockai.com</span>
+                  <span className="text-gray-600">info@reviewstock.io</span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -348,7 +348,7 @@ export default function Home() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <span className="text-gray-600">+1 (555) 123-4567</span>
+                  <span className="text-gray-600">+1 (415) 629-4008</span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -377,38 +377,89 @@ export default function Home() {
 
             <div>
               <h3 className="mb-6 text-2xl font-bold text-gray-900">Send us a message</h3>
-              <form className="space-y-4">
+              <form
+                id="contactForm"
+                className="space-y-4"
+                onSubmit={async (e) => {
+                  e.preventDefault()
+                  const form = e.target as HTMLFormElement
+                  const formData = new FormData(form)
+                  const submitButton = form.querySelector(
+                    'button[type="submit"]'
+                  ) as HTMLButtonElement
+                  const originalText = submitButton.textContent
+
+                  try {
+                    submitButton.textContent = 'Sending...'
+                    submitButton.disabled = true
+
+                    const response = await fetch('/api/contact', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        business: formData.get('business'),
+                        message: formData.get('message'),
+                      }),
+                    })
+
+                    if (response.ok) {
+                      alert('Thank you! Your message has been sent successfully.')
+                      form.reset()
+                    } else {
+                      const error = await response.json()
+                      alert(`Error: ${error.error || 'Failed to send message'}`)
+                    }
+                  } catch (error) {
+                    alert('Error: Failed to send message. Please try again.')
+                  } finally {
+                    submitButton.textContent = originalText
+                    submitButton.disabled = false
+                  }
+                }}
+              >
                 <div>
                   <input
                     type="text"
+                    name="name"
                     placeholder="Your Name"
+                    required
                     className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
                 <div>
                   <input
                     type="email"
+                    name="email"
                     placeholder="Your Email"
+                    required
                     className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
+                    name="business"
                     placeholder="Business Name"
+                    required
                     className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
                 <div>
                   <textarea
+                    name="message"
                     placeholder="Tell us about your business and how we can help"
                     rows={4}
+                    required
                     className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-blue-500"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-blue-600 px-6 py-3 font-bold text-white transition-colors hover:bg-blue-700"
+                  className="w-full rounded-lg bg-blue-600 px-6 py-3 font-bold text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
                 >
                   Send Message
                 </button>

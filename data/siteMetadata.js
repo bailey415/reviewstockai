@@ -12,7 +12,7 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/reviewstockai-logo.svg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'hello@reviewstockai.com',
+  email: 'info@reviewstock.io',
   github: 'https://github.com',
   x: 'https://twitter.com/reviewstockai',
   // twitter: 'https://twitter.com/Twitter',
