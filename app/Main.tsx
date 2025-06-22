@@ -343,17 +343,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mx-auto max-w-4xl">
-            <div className="relative rounded-lg border-2 border-[#2950d3] bg-white p-8 shadow-lg">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 transform">
-                <span className="rounded-full bg-[#fb5264] px-4 py-2 text-sm font-bold text-white">
-                  MOST POPULAR
-                </span>
-              </div>
-
+          <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
+            {/* Pro Plan */}
+            <div className="rounded-lg border-2 border-[#2950d3] bg-white p-8 shadow-lg">
               <div className="mb-8 text-center">
                 <h3 className="mb-2 text-3xl font-bold text-[#162242]">ReviewStockAI Pro</h3>
-                <div className="mb-2 text-6xl font-bold text-[#2950d3]">$299.99</div>
+                <div className="mb-2 text-6xl font-bold text-[#2950d3]">$249</div>
                 <div className="text-[#162242]">per month</div>
                 <p className="mt-2 text-sm text-[#162242]">No contract, cancel anytime</p>
               </div>
@@ -386,34 +381,6 @@ export default function Home() {
                     />
                   </svg>
                   <span className="text-[#162242]">AI-Powered Review Responses</span>
-                </div>
-                <div className="flex items-center">
-                  <svg
-                    className="mr-3 h-5 w-5 text-[#fb5264]"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-[#162242]">Medical Appointment Reminders</span>
-                </div>
-                <div className="flex items-center">
-                  <svg
-                    className="mr-3 h-5 w-5 text-[#fb5264]"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-[#162242]">HIPAA-Compliant Messaging</span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -463,6 +430,118 @@ export default function Home() {
                 <Link
                   href="#contact"
                   className="inline-block w-full rounded-lg bg-[#2950d3] px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-[#1e3db8]"
+                >
+                  Get Started Today
+                </Link>
+              </div>
+            </div>
+
+            {/* Premium Plan */}
+            <div className="relative rounded-lg border-2 border-[#fb5264] bg-white p-8 shadow-lg">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 transform">
+                <span className="rounded-full bg-[#fb5264] px-4 py-2 text-sm font-bold text-white">
+                  MOST POPULAR
+                </span>
+              </div>
+
+              <div className="mb-8 text-center">
+                <h3 className="mb-2 text-3xl font-bold text-[#162242]">ReviewStockAI Premium</h3>
+                <div className="mb-2 text-6xl font-bold text-[#2950d3]">$299</div>
+                <div className="text-[#162242]">per month</div>
+                <p className="mt-2 text-sm text-[#162242]">No contract, cancel anytime</p>
+              </div>
+
+              <div className="mb-8 space-y-4">
+                <div className="flex items-center">
+                  <svg
+                    className="mr-3 h-5 w-5 text-[#fb5264]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-[#162242]">Everything in Pro Plan</span>
+                </div>
+                <div className="flex items-center">
+                  <svg
+                    className="mr-3 h-5 w-5 text-[#fb5264]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-[#162242]">Medical Appointment Reminders</span>
+                </div>
+                <div className="flex items-center">
+                  <svg
+                    className="mr-3 h-5 w-5 text-[#fb5264]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-[#162242]">HIPAA-Compliant Messaging</span>
+                </div>
+                <div className="flex items-center">
+                  <svg
+                    className="mr-3 h-5 w-5 text-[#fb5264]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-[#162242]">Automated Appointment Confirmations</span>
+                </div>
+                <div className="flex items-center">
+                  <svg
+                    className="mr-3 h-5 w-5 text-[#fb5264]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-[#162242]">Reduce No-Show Rates by up to 80%</span>
+                </div>
+                <div className="flex items-center">
+                  <svg
+                    className="mr-3 h-5 w-5 text-[#fb5264]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-[#162242]">Priority Customer Support</span>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Link
+                  href="#contact"
+                  className="inline-block w-full rounded-lg bg-[#fb5264] px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-[#e64555]"
                 >
                   Get Started Today
                 </Link>
