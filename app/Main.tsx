@@ -2,6 +2,7 @@
 
 import Link from '@/components/Link'
 import siteMetadata from '@/data/siteMetadata'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -295,6 +296,50 @@ export default function Home() {
                 Automatically respond to reviews with personalized, professional messages that show
                 customers you care about their feedback.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Automated Communication Section */}
+      <section className="bg-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-4xl font-bold text-[#162242]">AI Automated Communication</h2>
+            <p className="mx-auto max-w-3xl text-xl text-[#162242]">
+              Engage customers and patients at every step with intelligent, automated messages for
+              reviews and appointments.
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-8">
+            <div className="w-full max-w-4xl">
+              <Image
+                src="/static/images/ai-google-review-reply.png"
+                alt="AI powered Google Review reply"
+                width={890}
+                height={445}
+                className="w-full rounded-lg shadow-2xl"
+              />
+            </div>
+            <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="rounded-lg bg-gray-50 p-6 shadow-xl">
+                <Image
+                  src="/static/images/automated-review-request.png"
+                  alt="Automated SMS review request"
+                  width={600}
+                  height={300}
+                  className="w-full rounded-md object-contain"
+                />
+              </div>
+              <div className="rounded-lg bg-gray-50 p-6 shadow-xl">
+                <Image
+                  src="/static/images/automated-appointment-reminder.png"
+                  alt="Automated SMS appointment reminder"
+                  width={600}
+                  height={300}
+                  className="w-full rounded-md object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
