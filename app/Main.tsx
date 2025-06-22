@@ -311,33 +311,44 @@ export default function Home() {
               reviews and appointments.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-8">
-            <div className="w-full max-w-4xl">
+          <div className="flex flex-col items-center gap-12">
+            {/* Main showcase image for AI review replies */}
+            <div className="w-full max-w-5xl text-center">
+              <h3 className="mb-4 text-2xl font-bold text-[#162242]">
+                AI-Powered Review Responses
+              </h3>
               <Image
-                src="/static/images/ai-google-review-reply.png"
+                src="/static/images/responseai.png"
                 alt="AI powered Google Review reply"
                 width={890}
                 height={445}
                 className="w-full rounded-lg shadow-2xl"
               />
             </div>
+            {/* Grid for SMS examples */}
             <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
-              <div className="rounded-lg bg-gray-50 p-6 shadow-xl">
+              <div className="flex flex-col items-center rounded-lg bg-[#f9fafb] p-8 shadow-xl">
+                <h3 className="mb-4 text-2xl font-semibold text-[#162242]">
+                  Automated Review Requests
+                </h3>
                 <Image
-                  src="/static/images/automated-review-request.png"
+                  src="/static/images/tyforservice.png"
                   alt="Automated SMS review request"
                   width={600}
                   height={300}
-                  className="w-full rounded-md object-contain"
+                  className="w-full max-w-sm rounded-md object-contain"
                 />
               </div>
-              <div className="rounded-lg bg-gray-50 p-6 shadow-xl">
+              <div className="flex flex-col items-center rounded-lg bg-[#f9fafb] p-8 shadow-xl">
+                <h3 className="mb-4 text-2xl font-semibold text-[#162242]">
+                  Appointment Reminders
+                </h3>
                 <Image
-                  src="/static/images/automated-appointment-reminder.png"
+                  src="/static/images/apptreminder.png"
                   alt="Automated SMS appointment reminder"
                   width={600}
                   height={300}
-                  className="w-full rounded-md object-contain"
+                  className="w-full max-w-sm rounded-md object-contain"
                 />
               </div>
             </div>
