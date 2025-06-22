@@ -21,16 +21,16 @@ export default function Home() {
             </p>
             <div className="flex justify-center gap-4 sm:flex-row">
               <Link
-                href="#demo"
+                href="#pricing"
                 className="rounded-lg bg-[#fb5264] px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-[#e64555]"
               >
-                Try Demo
+                View Pricing
               </Link>
               <Link
-                href="#pricing"
+                href="#contact"
                 className="rounded-lg border-2 border-white px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-white hover:text-[#162242]"
               >
-                View Pricing
+                Get Started
               </Link>
             </div>
           </div>
@@ -295,39 +295,6 @@ export default function Home() {
                 Automatically respond to reviews with personalized, professional messages that show
                 customers you care about their feedback.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Demo Section */}
-      <section id="demo" className="bg-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-[#162242]">See It In Action</h2>
-            <p className="text-xl text-[#162242]">
-              Watch how our platform automatically collects reviews and manages appointments
-            </p>
-          </div>
-
-          <div className="mx-auto max-w-4xl rounded-lg bg-white p-8 shadow-lg">
-            <div className="flex aspect-video items-center justify-center rounded-lg bg-gray-200">
-              <div className="text-center">
-                <svg
-                  className="mx-auto mb-4 h-16 w-16 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <p className="text-gray-600">Demo Video Coming Soon</p>
-              </div>
             </div>
           </div>
         </div>
