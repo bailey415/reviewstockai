@@ -1,0 +1,23 @@
+<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <title>ReviewStockAI</title>
+  <style>
+    .bg { fill: #2950d3; }
+    .node { fill: #fb5264; }
+    .center-node { fill: #fff9f8; }
+    .line { stroke: #fff9f8; stroke-width: 1.5px; stroke-linecap: round; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #162242; }
+      .line { stroke: #2950d3; }
+    }
+  </style>
+  <circle class="bg" cx="12" cy="12" r="12"/>
+  <line class="line" x1="7" y1="7" x2="12" y2="12"/>
+  <line class="line" x1="17" y1="7" x2="12" y2="12"/>
+  <line class="line" x1="7" y1="17" x2="12" y2="12"/>
+  <line class="line" x1="17" y1="17" x2="12" y2="12"/>
+  <circle class="node" cx="7" cy="7" r="1.5"/>
+  <circle class="node" cx="17" cy="7" r="1.5"/>
+  <circle class="node" cx="7" cy="17" r="1.5"/>
+  <circle class="node" cx="17" cy="17" r="1.5"/>
+  <circle class="center-node" cx="12" cy="12" r="1.5"/>
+</svg> 
