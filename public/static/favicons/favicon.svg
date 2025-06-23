@@ -1,23 +1,21 @@
-<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <title>ReviewStockAI</title>
-  <style>
-    .bg { fill: #2950d3; }
-    .node { fill: #fb5264; }
-    .center-node { fill: #fff9f8; }
-    .line { stroke: #fff9f8; stroke-width: 1.5px; stroke-linecap: round; }
-    @media (prefers-color-scheme: dark) {
-      .bg { fill: #162242; }
-      .line { stroke: #2950d3; }
-    }
-  </style>
-  <circle class="bg" cx="12" cy="12" r="12"/>
-  <line class="line" x1="7" y1="7" x2="12" y2="12"/>
-  <line class="line" x1="17" y1="7" x2="12" y2="12"/>
-  <line class="line" x1="7" y1="17" x2="12" y2="12"/>
-  <line class="line" x1="17" y1="17" x2="12" y2="12"/>
-  <circle class="node" cx="7" cy="7" r="1.5"/>
-  <circle class="node" cx="17" cy="7" r="1.5"/>
-  <circle class="node" cx="7" cy="17" r="1.5"/>
-  <circle class="node" cx="17" cy="17" r="1.5"/>
-  <circle class="center-node" cx="12" cy="12" r="1.5"/>
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="18" fill="#2950d3" stroke="#162242" stroke-width="2"/>
+  
+  <!-- AI/Neural network nodes -->
+  <circle cx="12" cy="12" r="2" fill="#fb5264"/>
+  <circle cx="28" cy="12" r="2" fill="#fb5264"/>
+  <circle cx="20" cy="20" r="2" fill="#fff9f8"/>
+  <circle cx="12" cy="28" r="2" fill="#fb5264"/>
+  <circle cx="28" cy="28" r="2" fill="#fb5264"/>
+  
+  <!-- Neural network connections -->
+  <path d="M12 12L20 20L28 12" stroke="#fff9f8" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M12 28L20 20L28 28" stroke="#fff9f8" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M12 12L12 28" stroke="#fff9f8" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M28 12L28 28" stroke="#fff9f8" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Star for reviews -->
+  <path d="M20 8L21.5 10.5L24 11L21.5 11.5L20 14L18.5 11.5L16 11L18.5 10.5L20 8Z" fill="#fb5264"/>
 </svg> 
